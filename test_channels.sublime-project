@@ -1,0 +1,24 @@
+{
+	"settings": {
+        "GoSublime": {
+            "env": {
+            	"GOPATH": "$HOME/Projects/go"
+            }
+        }
+	},
+	"build_systems":
+	[
+		{
+			"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+			"name": "Anaconda Python Builder",
+			"selector": "source.python",
+			"shell_cmd": "\"python\" -u \"$file\""
+		}
+	],
+	"folders":
+	[
+		{
+			"path": "go/src/github.com/8tomat8/test_channels"
+		}
+	]
+}
